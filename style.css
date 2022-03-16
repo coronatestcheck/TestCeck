@@ -10880,10 +10880,10 @@ p.text-sm {
 
 p.bigger {
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 1px
+    font-weight: 700;
+    font-size: 17.5px;
+    line-height: 21px;
+    padding: 6px
 }
 
 hr {
@@ -11027,7 +11027,7 @@ h6.scan {
 
 .time-info {
     padding-top: 16px;
-    padding-bottom: 16px;
+    padding-bottom: 8px;
     text-align: center;
 	justify-content: center;
 }

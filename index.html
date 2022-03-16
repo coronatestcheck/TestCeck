@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify</title>
+    <meta name="description" content="Verify your result">
+     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swamp"
+      rel="stylesheet"
+    />
+</head>
+
+<body>
+    <header>
+	<div class="logo-box">
+      <h1 style="text-align=center">Check your Results</h1>
+    </div>  
+    </header>
+    <main role="main">
+        <div class="header-extend">
+            <p>Please check if the Data is correct</p>
+        </div>
+        <div class="container row-middle">
+            <div class="mainbox">
+                <div class="top-indicator">
+                    <h6 class="text-center align-middle white" style="color: white">
+                        This is a verified result.
+                    </h6>
+                </div>
+                <div class="time-info">
+                    <p class="text-sm">TIME</p>
+                    <h5 id="FulldateOutput"></h5>
+                </div>
+                <div class="extra-info">
+                    <hr />
+                    <p class="text-sm">NAME</p>
+                    <h6 id="FullnameOutput"></h6>
+                    <hr />
+                    <p class="text-sm">RESULT</p>
+                    <h6 id="ResultOutput"></h6>
+                    <hr />
+                    <p class="text-sm">TEST LOCATION</p>
+                    <h6 id="StandortOutput"></h6>
+                </div>
+            </div>
+        </div>
+    
+        <footer>
+         <br>
+         <br>
+         <br>
+        </footer>
+    </main>
+    <script>
+    //variabeln_extracten
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+	  var coded = urlParams.get("p");
+	  var decodedHTML = atob(coded);
+	  const urlDecodedParams = new URLSearchParams(decodedHTML);
+
+      var datumV = urlDecodedParams.get("datum");
+      var timeV = urlDecodedParams.get("time");
+      var vornameV = urlDecodedParams.get("firstname");
+      var nachnameV = urlDecodedParams.get("lastname");
+      var result = urlDecodedParams.get("result");
+      var standort = urlDecodedParams.get("location");
+      var fullname = vornameV + " " + nachnameV;
+      var fulldate = datumV + " " + timeV;
+
+      document.getElementById("FulldateOutput").innerHTML = fulldate;
+      document.getElementById("FullnameOutput").innerHTML = fullname;
+      document.getElementById("ResultOutput").innerHTML = result;
+      document.getElementById("StandortOutput").innerHTML = standort;
+    </script>
+</body>
+
+</html>

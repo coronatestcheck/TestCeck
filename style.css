@@ -10893,7 +10893,11 @@ hr {
     padding: 0;
     margin: 16px
 }
+br {
+	display: block;
+	margin: 8px 0;
 
+}
 a {
     font-family: Roboto;
     font-style: normal;

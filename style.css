@@ -11048,6 +11048,11 @@ h6.scan {
 }
 
 .FulldateOutput{
-	padding-top: 8px;
+	padding-top: 16px;
 
+}
+
+.ResultOutput{
+	
+	padding-top: 16px;
 }

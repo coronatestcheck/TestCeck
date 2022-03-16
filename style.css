@@ -10881,9 +10881,9 @@ p.text-sm {
 p.bigger {
     font-style: normal;
     font-weight: 600;
-    font-size: 35px;
-    line-height: 36px;
-    padding: 8px
+    font-size: 25px;
+    line-height: 25px;
+    padding: 6px
 }
 
 hr {

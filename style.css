@@ -3948,46 +3948,6 @@ input[type=button].btn-block {
     background: 50%/50% 50% no-repeat
 }
 
-.custom-checkbox .custom-control-label::before {
-    border-radius: .25rem
-}
-
-.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc4JyBoZWlnaHQ9JzgnIHZpZXdCb3g9JzAgMCA4IDgnPjxwYXRoIGZpbGw9JyNmZmYnIGQ9J002LjU2NC43NWwtMy41OSAzLjYxMi0xLjUzOC0xLjU1TDAgNC4yNmwyLjk3NCAyLjk5TDggMi4xOTN6Jy8+PC9zdmc+)
-}
-
-.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-    border-color: #007bff;
-    background-color: #007bff
-}
-
-.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0JyBoZWlnaHQ9JzQnIHZpZXdCb3g9JzAgMCA0IDQnPjxwYXRoIHN0cm9rZT0nI2ZmZicgZD0nTTAgMmg0Jy8+PC9zdmc+)
-}
-
-.custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
-    background-color: rgba(0, 123, 255, .5)
-}
-
-.custom-checkbox .custom-control-input:disabled:indeterminate~.custom-control-label::before {
-    background-color: rgba(0, 123, 255, .5)
-}
-
-.custom-radio .custom-control-label::before {
-    border-radius: 50%
-}
-
-.custom-radio .custom-control-input:checked~.custom-control-label::after {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMicgaGVpZ2h0PScxMicgdmlld0JveD0nLTQgLTQgOCA4Jz48Y2lyY2xlIHI9JzMnIGZpbGw9JyNmZmYnLz48L3N2Zz4=)
-}
-
-.custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
-    background-color: rgba(0, 123, 255, .5)
-}
-
-.custom-switch {
-    padding-left: 2.25rem
-}
 
 .custom-switch .custom-control-label::before {
     left: -2.25rem;
@@ -11027,7 +10987,6 @@ h6.scan {
 
 .time-info {
     padding-top: 16px;
-    padding-bottom: 8px;
     text-align: center;
 	justify-content: center;
 }

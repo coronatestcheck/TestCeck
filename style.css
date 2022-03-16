@@ -11046,3 +11046,8 @@ h6.scan {
     justify-content: center;
     flex-direction: row;
 }
+
+.FulldateOutput{
+	padding-top: 8px;
+
+}
